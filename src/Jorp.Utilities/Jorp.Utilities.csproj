@@ -6,10 +6,16 @@
     <AssemblyVersion>1.0.0.1</AssemblyVersion>
     <FileVersion>1.0.0.1</FileVersion>
     <Copyright>© XNOM AB - Technology and innovation (MIT)</Copyright>
-    <Authors>XNOM Technology &amp; Innovation</Authors>
-    <Company>XNOM AB</Company>
+    <Authors>Saman Payam</Authors>
+    <Company>XNOM Technology &amp; Innovation</Company>
     <PackageId>Jorp.Utilities</PackageId>
-    <PackageProjectUrl>https://github.com/xnomtechnology/jorp/blob/master/LICENSE</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/xnomtechnology/jorp.utilities/wiki</PackageProjectUrl>
+    <Version>1.0.0.1</Version>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/xnomtechnology/jorp.utilities</RepositoryUrl>
+    <RepositoryType>Lib</RepositoryType>
+    <PackageTags>Jorp Utilities</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
 </Project>

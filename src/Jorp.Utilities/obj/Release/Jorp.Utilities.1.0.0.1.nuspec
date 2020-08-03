@@ -2,18 +2,22 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Jorp.Utilities</id>
-    <version>1.0.0</version>
+    <version>1.0.0.1</version>
     <authors>Saman Payam</authors>
     <owners>Saman Payam</owners>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
     <projectUrl>https://github.com/xnomtechnology/jorp.utilities/wiki</projectUrl>
     <description>Package Description</description>
     <copyright>© XNOM AB - Technology and innovation (MIT)</copyright>
+    <tags>Jorp Utilities</tags>
+    <repository type="Lib" url="https://github.com/xnomtechnology/jorp.utilities" />
     <dependencies>
       <group targetFramework=".NETStandard2.0" />
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\bin\Debug\netstandard2.0\Jorp.Utilities.dll" target="lib\netstandard2.0\Jorp.Utilities.dll" />
+    <file src="C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\bin\Release\netstandard2.0\Jorp.Utilities.dll" target="lib\netstandard2.0\Jorp.Utilities.dll" />
   </files>
 </package>

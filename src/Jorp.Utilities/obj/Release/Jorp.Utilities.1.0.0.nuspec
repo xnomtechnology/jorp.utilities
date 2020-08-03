@@ -14,6 +14,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\bin\Debug\netstandard2.0\Jorp.Utilities.dll" target="lib\netstandard2.0\Jorp.Utilities.dll" />
+    <file src="C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\bin\Release\netstandard2.0\Jorp.Utilities.dll" target="lib\netstandard2.0\Jorp.Utilities.dll" />
   </files>
 </package>

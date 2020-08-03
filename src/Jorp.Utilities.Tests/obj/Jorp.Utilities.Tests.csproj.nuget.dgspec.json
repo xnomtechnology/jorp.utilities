@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities.Tests\\Jorp.Utilities.Tests.csproj": {}
+    "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities.Tests\\Jorp.Utilities.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities.Tests\\Jorp.Utilities.Tests.csproj": {
+    "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities.Tests\\Jorp.Utilities.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities.Tests\\Jorp.Utilities.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities.Tests\\Jorp.Utilities.Tests.csproj",
         "projectName": "Jorp.Utilities.Tests",
-        "projectPath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities.Tests\\Jorp.Utilities.Tests.csproj",
+        "projectPath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities.Tests\\Jorp.Utilities.Tests.csproj",
         "packagesPath": "C:\\Users\\saman_vhdnq0z\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities.Tests\\obj\\",
+        "outputPath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -25,13 +25,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/xnomtechnology/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities\\Jorp.Utilities.csproj": {
-                "projectPath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities\\Jorp.Utilities.csproj"
+              "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities\\Jorp.Utilities.csproj": {
+                "projectPath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities\\Jorp.Utilities.csproj"
               }
             }
           }
@@ -78,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities\\Jorp.Utilities.csproj": {
-      "version": "1.0.0",
+    "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities\\Jorp.Utilities.csproj": {
+      "version": "1.0.0.1",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities\\Jorp.Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities\\Jorp.Utilities.csproj",
         "projectName": "Jorp.Utilities",
-        "projectPath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities\\Jorp.Utilities.csproj",
+        "projectPath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities\\Jorp.Utilities.csproj",
         "packagesPath": "C:\\Users\\saman_vhdnq0z\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities\\obj\\",
+        "outputPath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -99,7 +100,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.pkg.github.com/xnomtechnology/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {

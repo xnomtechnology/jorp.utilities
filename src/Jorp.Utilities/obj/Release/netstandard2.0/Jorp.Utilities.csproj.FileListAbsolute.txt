@@ -1,0 +1,9 @@
+C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\bin\Release\netstandard2.0\Jorp.Utilities.deps.json
+C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\bin\Release\netstandard2.0\Jorp.Utilities.dll
+C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\bin\Release\netstandard2.0\Jorp.Utilities.pdb
+C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\obj\Release\netstandard2.0\Jorp.Utilities.csprojAssemblyReference.cache
+C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\obj\Release\netstandard2.0\Jorp.Utilities.AssemblyInfoInputs.cache
+C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\obj\Release\netstandard2.0\Jorp.Utilities.AssemblyInfo.cs
+C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\obj\Release\netstandard2.0\Jorp.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\obj\Release\netstandard2.0\Jorp.Utilities.dll
+C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\obj\Release\netstandard2.0\Jorp.Utilities.pdb

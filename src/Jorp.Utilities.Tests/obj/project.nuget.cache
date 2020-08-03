@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YiShEKmtbpksVQohjEGFp6CtIdEqiPhAT+GpmOxGTxpt+fVJ8uzdtKST/XFHJ+Vy2vb7DThCt+/uiQ86IIpyaw==",
+  "dgSpecHash": "SJEHL/PQ0WRbvE0ncwLrOwsEpymrKJ6vwmtsINObCzAMZDwlkkzMw0cb0ieqQ8sGSXtvGmbwruSlPvn0EGnilA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities.Tests\\Jorp.Utilities.Tests.csproj",
+  "projectFilePath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities.Tests\\Jorp.Utilities.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saman_vhdnq0z\\.nuget\\packages\\microsoft.codecoverage\\16.6.1\\microsoft.codecoverage.16.6.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
@@ -70,8 +70,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
-    "C:\\Users\\saman_vhdnq0z\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\saman_vhdnq0z\\.nuget\\packages\\jorp.utilities\\1.0.0\\jorp.utilities.1.0.0.nupkg.sha512"
+    "C:\\Users\\saman_vhdnq0z\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
