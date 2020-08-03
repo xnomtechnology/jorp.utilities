@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Jorp.Utilities</id>
+    <version>1.0.0</version>
+    <authors>XNOM Technology &amp; Innovation</authors>
+    <owners>XNOM Technology &amp; Innovation</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/xnomtechnology/jorp/blob/master/LICENSE</projectUrl>
+    <description>Package Description</description>
+    <copyright>© XNOM AB - Technology and innovation (MIT)</copyright>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\Jorp.Utilities\Jorp.Utilities\bin\Debug\netstandard2.0\Jorp.Utilities.dll" target="lib\netstandard2.0\Jorp.Utilities.dll" />
+  </files>
+</package>

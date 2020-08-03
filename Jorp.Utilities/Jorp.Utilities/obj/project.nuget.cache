@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "iaF5SWtNdWKXPW3ODmZ4JmPGPWFRpYqS4Q8CJ/16if3oSrKUWUxL6JgxOGyagu9q+LHoFMqy+nnhMM6ADcy60g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\Jorp.Utilities\\Jorp.Utilities\\Jorp.Utilities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

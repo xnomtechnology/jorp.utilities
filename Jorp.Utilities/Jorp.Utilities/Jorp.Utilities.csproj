@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Copyright>© XNOM AB - Technology and innovation (MIT)</Copyright>
+    <Authors>XNOM Technology &amp; Innovation</Authors>
+    <Company>XNOM AB</Company>
+    <PackageId>Jorp.Utilities</PackageId>
+    <PackageProjectUrl>https://github.com/xnomtechnology/jorp/blob/master/LICENSE</PackageProjectUrl>
+  </PropertyGroup>
+
+</Project>

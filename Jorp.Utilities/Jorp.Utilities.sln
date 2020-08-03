@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jorp.Utilities", "Jorp.Utilities\Jorp.Utilities.csproj", "{036EB827-B130-4007-A89D-B8AD07412EA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jorp.Utilities.Tests", "Jorp.Utilities.Tests\Jorp.Utilities.Tests.csproj", "{744F0505-9C55-4AAA-A872-C3EFDBF2E8ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{036EB827-B130-4007-A89D-B8AD07412EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{036EB827-B130-4007-A89D-B8AD07412EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{036EB827-B130-4007-A89D-B8AD07412EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{036EB827-B130-4007-A89D-B8AD07412EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{744F0505-9C55-4AAA-A872-C3EFDBF2E8ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{744F0505-9C55-4AAA-A872-C3EFDBF2E8ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{744F0505-9C55-4AAA-A872-C3EFDBF2E8ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{744F0505-9C55-4AAA-A872-C3EFDBF2E8ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCD11F76-4174-4B68-B554-E59606767115}
+	EndGlobalSection
+EndGlobal
