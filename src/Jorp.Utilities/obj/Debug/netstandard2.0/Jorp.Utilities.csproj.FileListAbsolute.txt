@@ -24,4 +24,3 @@ C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Util
 C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\obj\Debug\netstandard2.0\Jorp.Utilities.csproj.CoreCompileInputs.cache
 C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\obj\Debug\netstandard2.0\Jorp.Utilities.dll
 C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\obj\Debug\netstandard2.0\Jorp.Utilities.pdb
-C:\Users\saman_vhdnq0z\source\github\xnomtechnology\jorp.utilities\src\Jorp.Utilities\obj\Debug\netstandard2.0\Jorp.Utilities.csprojAssemblyReference.cache

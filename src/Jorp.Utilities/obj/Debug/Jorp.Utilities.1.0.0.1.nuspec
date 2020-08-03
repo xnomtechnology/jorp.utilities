@@ -8,7 +8,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
-    <projectUrl>https://github.com/xnomtechnology/jorp.utilities/wiki</projectUrl>
+    <projectUrl>https://github.com/xnomtechnology/jorp.utilities/projects</projectUrl>
     <description>Package Description</description>
     <copyright>© XNOM AB - Technology and innovation (MIT)</copyright>
     <tags>Jorp Utilities</tags>
