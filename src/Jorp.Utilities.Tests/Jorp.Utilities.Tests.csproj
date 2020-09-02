@@ -16,4 +16,8 @@
     <ProjectReference Include="..\Jorp.Utilities\Jorp.Utilities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
 </Project>

@@ -18,4 +18,14 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="WorkflowHandler\**" />
+    <EmbeddedResource Remove="WorkflowHandler\**" />
+    <None Remove="WorkflowHandler\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
 </Project>

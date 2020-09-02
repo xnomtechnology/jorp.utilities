@@ -7,7 +7,7 @@ using NUnit.Framework;
 namespace Jorp.Utilities.Tests.Extentions
 {
     [TestFixture]
-    public class EnumerableExtensionsTests
+    public class EnumerableExtensionTests
     {
         [Test]
         public void BaseEnumerableExtensionsChunkTest()
