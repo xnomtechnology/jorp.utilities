@@ -1,8 +1,6 @@
 ﻿using Jorp.Utilities.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 
 namespace Jorp.Utilities.Extentions
 {
@@ -66,11 +64,7 @@ namespace Jorp.Utilities.Extentions
                 workflow.Result.State = State.Suspended;
             }
 
-            return workflow.Result;
-
-            
+            return workflow.Result;            
         }
-
-
     }
 }
