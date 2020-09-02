@@ -42,13 +42,12 @@ namespace Jorp.Utilities.Extentions
         /// <param name="threadSize"></param>
         /// <param name="maxDegreeOfParallelism"></param>
         /// <param name="action"></param>
-        /// <param name="thredExceptions"></param>
+        /// <param name="aggregateException"></param>
         public static void ParallelThreadingInvoke<T>(this IEnumerable<T> source, int? threadSize,
-            int? maxDegreeOfParallelism, ref IList<Exception> thredExceptions, Action<IEnumerable<T>> action) 
+            int? maxDegreeOfParallelism, ref AggregateException aggregateException, Action<IEnumerable<T>> action) 
         {
             if (source == null) throw new ArgumentNullException(nameof(source));
-
-            var internalExceptions = new List<Exception>();
+                        
             var cancellationTokenSource = new CancellationTokenSource();
 
             var batches = source
@@ -72,8 +71,6 @@ namespace Jorp.Utilities.Extentions
                         }
                         catch (Exception e)
                         {
-                            internalExceptions.Add(e);
-
                             cancellationTokenSource.Cancel();
                             throw;
                         }
@@ -91,9 +88,81 @@ namespace Jorp.Utilities.Extentions
             }
             catch (Exception e)
             {
-                if (thredExceptions is null)
-                    throw;
-                thredExceptions.Add(e);
+                if (aggregateException is null) throw;
+
+                aggregateException = new AggregateException("Failed to iterate", e);
+            }
+        }
+
+        /// <summary>
+        /// Invoke parallel threading processing
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="source"></param>
+        /// <param name="threadSize"></param>
+        /// <param name="maxDegreeOfParallelism"></param>
+        /// <param name="action"></param>
+        /// <param name="aggregateException"></param>
+        public static void ParallelThreadingInvoke<T>(this IEnumerable<T> source, int? threadSize,
+            int? maxDegreeOfParallelism, bool abortOnError, ref AggregateException aggregateException, Action<IEnumerable<T>> action)
+        {
+            if (source == null) throw new ArgumentNullException(nameof(source));
+
+            var internalAggregateException = new AggregateException();
+            var cancellationTokenSource = new CancellationTokenSource();
+
+            var batches = source
+                .ToList()
+                .Chunk(threadSize ?? source.ToList().Count())
+                .Count();
+
+            var actions = new List<Action>(batches);
+
+            source
+                .Select(_ => _)
+                .ToList()
+                .Chunk(threadSize ?? source.ToList().Count())
+                .ToList()
+                .ForEach(batch =>
+                    actions.Add(() =>
+                    {
+                        try
+                        {
+                            action(batch);
+                        }
+                        catch (Exception e)
+                        {
+                            
+                            if (!abortOnError)
+                            {
+                                internalAggregateException.InnerExceptions.Add(e);
+                                return;
+                            }
+
+                            //abort invoke if some of execution fails
+                            cancellationTokenSource.Cancel();
+                            throw;
+                        }
+                    }));
+
+            var parallelOptions = new ParallelOptions()
+            {
+                MaxDegreeOfParallelism = maxDegreeOfParallelism ?? 1,
+                CancellationToken = cancellationTokenSource.Token
+            };
+
+            try
+            {
+                Parallel.Invoke(parallelOptions, actions.ToArray());
+
+                if (abortOnError && internalAggregateException.InnerExceptions.Any())
+                    throw new AggregateException(internalAggregateException.InnerExceptions);
+                
+            }
+            catch (Exception e)
+            {
+                if (aggregateException is null) throw;
+                aggregateException = new AggregateException("Failed to iterate", e);
             }
         }
     }
