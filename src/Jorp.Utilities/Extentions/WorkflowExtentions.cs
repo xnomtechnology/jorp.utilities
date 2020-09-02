@@ -13,39 +13,7 @@ namespace Jorp.Utilities.Extentions
         /// </summary>
         /// <param name="workflow"></param>
         /// <returns></returns>
-        public static WorkflowResult Execute(this Workflow workflow)
-        {
-            workflow.Result.State = State.Ready;
-
-            try
-            {
-                workflow.Steps
-                    .ToList()
-                    .ForEach(_ =>
-                    {
-                        try
-                        {
-                            _.Execute();
-                        }
-                        catch (Exception e)
-                        {
-                            _.StepSettings.InnerExceptions = e;                            
-                        }
-                    
-                });
-
-                workflow.Result.State = State.Completed;
-
-            }
-            catch (Exception e)
-            {
-
-                workflow.Result.Exceptions = e.InnerException;
-                workflow.Result.State = State.Suspended;
-            }            
-
-            return workflow.Result;
-        }
+        public static WorkflowResult Execute(this Workflow workflow) => ExecuteAsync(workflow, null);
 
         /// <summary>
         /// Execute steps synchronously 
