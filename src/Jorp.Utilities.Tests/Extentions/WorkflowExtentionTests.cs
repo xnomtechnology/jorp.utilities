@@ -2,11 +2,6 @@
 using NUnit.Framework;
 using System;
 using Jorp.Utilities.Extentions;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Jorp.Utilities.Tests.Extentions
 {
@@ -46,7 +41,7 @@ namespace Jorp.Utilities.Tests.Extentions
             var result = TestWorkflow.ExecuteAsync(1, abortOnError);
             
             Assert.That(result.State, Is.EqualTo(State.Completed), "Expect state to be Completed");
-            //Assert.That(result.Exceptions, Is.EqualTo(null), "Expect worklfow exception to be Completed");
+            Assert.That(result.Exceptions.InnerException, Is.EqualTo(null), "Expect worklfow exception to be Empty/null");
         }
 
 
@@ -77,7 +72,7 @@ namespace Jorp.Utilities.Tests.Extentions
             var result = TestWorkflow.ExecuteAsync(2, abortOnError);
 
             Assert.That(result.State, Is.EqualTo(State.Completed), "Expect state to be Completed");
-            //Assert.That(result.Exceptions, Is.EqualTo(null), "Expect worklfow exception to be Completed");
+            Assert.That(result.Exceptions.InnerException, Is.EqualTo(null), "Expect worklfow exception to be Empty/null");
         }
     }
 
