@@ -24,8 +24,4 @@
     <None Remove="WorkflowHandler\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-  </ItemGroup>
-
 </Project>
