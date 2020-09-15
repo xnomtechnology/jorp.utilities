@@ -68,10 +68,6 @@ namespace Jorp.Utilities.Models
     {
         public Status Status { get; set; }
         public Exception InnerExceptions { get; set; }
-
-
-        
-        
     }
 
     public static class StepSettingHelper
