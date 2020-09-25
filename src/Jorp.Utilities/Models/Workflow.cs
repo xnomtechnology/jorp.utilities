@@ -4,13 +4,6 @@ using System.Linq;
 
 namespace Jorp.Utilities.Models
 {
-    public interface IStep
-    {
-        void Execute();        
-        StepSettings StepSettings { get; set; }
-    }
-
-
     /// <summary>
     /// Implementation of workflow flow, singelton execution
     /// </summary>
@@ -59,52 +52,5 @@ namespace Jorp.Utilities.Models
             AbortOnError = abort;
             return this;
         }
-    }
-
-    /// <summary>
-    /// Step settings for requried properties
-    /// </summary>
-    public class StepSettings
-    {
-        public Status Status { get; set; }
-        public Exception InnerExceptions { get; set; }
-    }
-
-    public static class StepSettingHelper
-    {
-        public static Status SetSettingsStepStatus(this Status status, Status newStatus) => status != null ? newStatus : status;
-    }
-
-    public class WorkflowResult
-    {
-        public State State { get; set; }
-        
-        public Exception Exceptions { get; set; }
-    }
-
-
-    /// <summary>
-    /// Workflow state of complette singelton run
-    /// </summary>
-    public enum State
-    {
-        Ready,
-        Suspended,
-        Locked,
-        Completed
-    }
-
-    /// <summary>
-    /// Status for step status
-    /// </summary>
-    public enum Status
-    {        
-        WaitingForResources,
-        Waiting,
-        InProgress,
-        Canceling,
-        Succeeded,
-        Failed,
-        Canceled
     }
 }
