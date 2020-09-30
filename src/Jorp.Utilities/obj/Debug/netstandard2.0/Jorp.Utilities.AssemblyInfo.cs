@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("© XNOM AB - Technology and innovation (MIT)")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.1")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Jorp.Utilities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Jorp.Utilities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.1")]
