@@ -1226,7 +1226,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "Jorp.Utilities/1.0.0.2": {
+      "Jorp.Utilities/1.0.0.3": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "compile": {
@@ -4578,7 +4578,7 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "Jorp.Utilities/1.0.0.2": {
+    "Jorp.Utilities/1.0.0.3": {
       "type": "project",
       "path": "../Jorp.Utilities/Jorp.Utilities.csproj",
       "msbuildProject": "../Jorp.Utilities/Jorp.Utilities.csproj"
@@ -4586,7 +4586,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Jorp.Utilities >= 1.0.0.2",
+      "Jorp.Utilities >= 1.0.0.3",
       "Microsoft.NET.Test.Sdk >= 16.7.1",
       "NUnit3TestAdapter >= 3.17.0",
       "nunit >= 3.12.0"
