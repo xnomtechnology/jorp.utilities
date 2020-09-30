@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FTEpZabQiWQFlbfVsobBt2BpyRsFRDyBNab7rIshXbLmPA9fteXUJQd4HFaHAzJCNQ7msd25ScqvX6INoMy/Qg==",
+  "dgSpecHash": "A/Fr5lHGeRDcO2gCwG7JGIc+9Q5B1rMHkZ/NSFUUYRRJTWpghjzOBITjDEK7ot94/fWFE5NrHUUgP1oKqqWs/w==",
   "success": true,
-  "projectFilePath": "c:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities.Tests\\Jorp.Utilities.Tests.csproj",
+  "projectFilePath": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities.Tests\\Jorp.Utilities.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\saman_vhdnq0z\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

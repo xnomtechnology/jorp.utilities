@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Jorp.Utilities.Models
+namespace Jorp.Utilities.Workflow
 {
     /// <summary>
     /// Implementation of workflow flow, singelton execution
     /// </summary>
-    public class Workflow
+    public class WorkflowBuilder
     {
-        public Workflow()
+        public WorkflowBuilder()
         {
             Steps = new List<IStep>();
             Result = new WorkflowResult() 
@@ -19,7 +19,7 @@ namespace Jorp.Utilities.Models
             };
         }
 
-        public Workflow(params dynamic[] param) : this() 
+        public WorkflowBuilder(params dynamic[] param) : this() 
             => GlobalParameters = param.ToArray<dynamic>();
         
 
@@ -41,13 +41,13 @@ namespace Jorp.Utilities.Models
         /// </summary>
         /// <param name="step"></param>
         /// <returns></returns>
-        public Workflow AddSteps(IStep step) 
+        public WorkflowBuilder AddSteps(IStep step) 
         {
             Steps.Add(step);
             return this;
         }
 
-        public Workflow SetAbortOnError(bool abort)
+        public WorkflowBuilder SetAbortOnError(bool abort)
         {
             AbortOnError = abort;
             return this;

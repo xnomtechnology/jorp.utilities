@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Jorp.Utilities.Extentions
+namespace Jorp.Utilities
 {
     public static class EnumerableExtensions
     {
@@ -25,11 +25,20 @@ namespace Jorp.Utilities.Extentions
         }
 
 
+        /// <summary>
+        /// Add Value to Enumerable list
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="e"></param>
+        /// <param name="value"></param>
+        /// <returns></returns>
         public static IEnumerable<T> Add<T>(this IEnumerable<T> e, T value)
         {
 
             foreach (var cur in e)
+            {
                 yield return cur;
+            }
 
             yield return value;
         }

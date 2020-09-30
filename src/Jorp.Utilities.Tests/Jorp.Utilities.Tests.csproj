@@ -22,4 +22,8 @@
     <ProjectReference Include="..\Jorp.Utilities\Jorp.Utilities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extentions\" />
+  </ItemGroup>
+
 </Project>

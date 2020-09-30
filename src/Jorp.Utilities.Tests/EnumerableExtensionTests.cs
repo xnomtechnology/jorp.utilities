@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Jorp.Utilities.Extentions;
 using NUnit.Framework;
 
-namespace Jorp.Utilities.Tests.Extentions
+namespace Jorp.Utilities.Tests
 {
     [TestFixture]
     public class EnumerableExtensionTests
