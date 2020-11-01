@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities\\Jorp.Utilities.csproj": {
-      "version": "1.0.0.1",
+      "version": "1.0.0.3",
       "restore": {
         "projectUniqueName": "C:\\Users\\saman_vhdnq0z\\source\\github\\xnomtechnology\\jorp.utilities\\src\\Jorp.Utilities\\Jorp.Utilities.csproj",
         "projectName": "Jorp.Utilities",
@@ -25,8 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.pkg.github.com/xnomtechnology/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -59,7 +58,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

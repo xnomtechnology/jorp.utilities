@@ -1,4 +1,4 @@
-﻿namespace Jorp.Utilities.Models
+﻿namespace Jorp.Utilities.Workflow
 {
     /// <summary>
     /// Status for step status

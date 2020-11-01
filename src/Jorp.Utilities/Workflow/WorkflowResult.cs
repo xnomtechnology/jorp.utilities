@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Jorp.Utilities.Models
+namespace Jorp.Utilities.Workflow
 {
     public class WorkflowResult
     {

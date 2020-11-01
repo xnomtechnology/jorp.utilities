@@ -1,32 +1,30 @@
-﻿using Jorp.Utilities.Models;
-using NUnit.Framework;
-using System;
-using Jorp.Utilities.Extentions;
+﻿using NUnit.Framework;
+using Jorp.Utilities.Workflow;
 
 namespace Jorp.Utilities.Tests.Extentions
 {
     [TestFixture]
     public class WorkflowExtentionTests
     {
-        public Workflow TestWorkflow { get; set; }
+        public WorkflowBuilder TestWorkflowBuilder { get; set; }
 
         [SetUp]
         public void Init()
         {            
-            TestWorkflow = new Workflow();            
+            TestWorkflowBuilder = new Workflow.WorkflowBuilder();            
         }
 
         [TearDown]
         public void Dispose()
         {
-            TestWorkflow = null;
+            TestWorkflowBuilder = null;
         }
 
         [Test]
         public void BaseWorkflowTest()
         {
             var abortOnError = false;
-            TestWorkflow
+            TestWorkflowBuilder
                 .SetAbortOnError(true)
                 .AddSteps(new Step1() 
                 { 
@@ -38,7 +36,7 @@ namespace Jorp.Utilities.Tests.Extentions
                 });
 
 
-            var result = TestWorkflow.ExecuteAsync(1, abortOnError);
+            var result = TestWorkflowBuilder.ExecuteAsync(1, abortOnError);
             
             Assert.That(result.State, Is.EqualTo(State.Completed), "Expect state to be Completed");
             Assert.That(result.Exceptions.InnerException, Is.EqualTo(null), "Expect worklfow exception to be Empty/null");
@@ -49,7 +47,7 @@ namespace Jorp.Utilities.Tests.Extentions
         public void BaseWorkflowAsyncTest()
         {
             var abortOnError = false;
-            TestWorkflow
+            TestWorkflowBuilder
                 .SetAbortOnError(true)
                 .AddSteps(new Step1()
                 {
@@ -69,37 +67,10 @@ namespace Jorp.Utilities.Tests.Extentions
                 });
 
 
-            var result = TestWorkflow.ExecuteAsync(2, abortOnError);
+            var result = TestWorkflowBuilder.ExecuteAsync(2, abortOnError);
 
             Assert.That(result.State, Is.EqualTo(State.Completed), "Expect state to be Completed");
             Assert.That(result.Exceptions.InnerException, Is.EqualTo(null), "Expect worklfow exception to be Empty/null");
-        }
-    }
-
-
-    public class Step1 : IStep
-    {
-        public Exception InnerExceptions { get; set; }
-        public StepSettings StepSettings { get; set; }
-
-        public void Execute()
-        {
-            //Execute custom code
-            System.Threading.Thread.Sleep(5000);
-            Console.WriteLine("step1:" + DateTime.Now.ToString());
-        }
-    }
-
-    public class Step2 : IStep
-    {
-        public Exception InnerExceptions { get; set; }
-        public StepSettings StepSettings { get; set; }
-
-        public void Execute()
-        {
-            //Execute custom code
-            System.Threading.Thread.Sleep(5000);
-            Console.WriteLine("step2: " + DateTime.Now.ToString());
         }
     }
 }

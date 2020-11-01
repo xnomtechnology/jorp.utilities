@@ -1,17 +1,16 @@
-﻿using Jorp.Utilities.Models;
-using System;
+﻿using System;
 using System.Linq;
 
-namespace Jorp.Utilities.Extentions
+namespace Jorp.Utilities.Workflow
 {
-    public static class WorkflowExtentions
+    public static class WorkflowBuilderExtentions
     {
         /// <summary>
         /// Execute steps synchronously 
         /// </summary>
         /// <param name="workflow"></param>
         /// <returns></returns>
-        public static WorkflowResult Execute(this Workflow workflow) => ExecuteAsync(workflow, null);
+        public static WorkflowResult Execute(this WorkflowBuilder workflow) => ExecuteAsync(workflow, null);
 
         /// <summary>
         /// Execute steps synchronously 
@@ -19,7 +18,7 @@ namespace Jorp.Utilities.Extentions
         /// <param name="workflow"></param>
         /// <param name="maxDegreeOfParallelism"></param>
         /// <returns></returns>
-        public static WorkflowResult ExecuteAsync(this Workflow workflow, int? maxDegreeOfParallelism, bool abortOnStepError = true)
+        public static WorkflowResult ExecuteAsync(this WorkflowBuilder workflow, int? maxDegreeOfParallelism, bool abortOnStepError = true)
         {
             workflow.Result.State = State.Ready;
 
@@ -54,7 +53,7 @@ namespace Jorp.Utilities.Extentions
                 workflow.Result.State = State.Completed;
 
                 if (aggregateException.InnerExceptions.Any())                
-                    throw new AggregateException("Faild to execute Workflow", aggregateException.InnerExceptions);
+                    throw new AggregateException("Faild to execute WorkflowBuilder", aggregateException.InnerExceptions);
                 
             }
             catch (Exception e)

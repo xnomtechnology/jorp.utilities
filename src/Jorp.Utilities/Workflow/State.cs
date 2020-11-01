@@ -1,7 +1,7 @@
-﻿namespace Jorp.Utilities.Models
+﻿namespace Jorp.Utilities.Workflow
 {
     /// <summary>
-    /// Workflow state of complette singelton run
+    /// WorkflowBuilder state of complette singelton run
     /// </summary>
     public enum State
     {
