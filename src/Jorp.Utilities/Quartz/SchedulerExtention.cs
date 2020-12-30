@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Jorp.Utilities.Extentions
+namespace Jorp.Utilities.Quartz
 {
     public static class SchedulerExtention
     {

@@ -1,7 +1,4 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Jorp.Utilities.Quartz;
 
 namespace Jorp.Utilities.Tests.Quartz
@@ -10,7 +7,7 @@ namespace Jorp.Utilities.Tests.Quartz
     public class TriggerBuilderTests
     {
 
-        public TriggerBuilder Trigger { get; set; }
+        public QuartzBuilder Trigger { get; set; }
 
         [SetUp]
         public void Init()
@@ -27,9 +24,14 @@ namespace Jorp.Utilities.Tests.Quartz
         [Test]
         public void BaseWorkflowTest()
         {
-            var builder = Trigger
+            //https://crontab.guru/examples.html    
+            var triggerBuilder = Trigger
                 .Create()
-                .WithCronSchedule("test").WithIdentity("");
+                .WithCronSchedule("*/2 * * * *")
+                .WithIdentity("test", "test1")
+                .Validate();
+
+            Assert.IsTrue(triggerBuilder.Result);
         }
 
     }
