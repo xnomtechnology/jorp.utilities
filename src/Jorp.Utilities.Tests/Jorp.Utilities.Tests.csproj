@@ -1,14 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <AssemblyName>x</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Extentions\**" />
     <Compile Remove="Validators\**" />
+    <EmbeddedResource Remove="Extentions\**" />
     <EmbeddedResource Remove="Validators\**" />
+    <None Remove="Extentions\**" />
     <None Remove="Validators\**" />
   </ItemGroup>
 
@@ -20,10 +25,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Jorp.Utilities\Jorp.Utilities.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Extentions\" />
   </ItemGroup>
 
 </Project>

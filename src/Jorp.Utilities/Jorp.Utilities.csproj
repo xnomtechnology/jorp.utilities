@@ -19,13 +19,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\**" />
     <Compile Remove="WorkflowHandler\**" />
+    <EmbeddedResource Remove="Models\**" />
     <EmbeddedResource Remove="WorkflowHandler\**" />
+    <None Remove="Models\**" />
     <None Remove="WorkflowHandler\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\" />
   </ItemGroup>
 
 </Project>
